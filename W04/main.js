@@ -23,13 +23,7 @@ function main()
     scene.add( cube );
 
     
-  /* var light = new THREE.PointLight(0xffffff);
-    light.position.set(1,1,1);
-    scene.add(light);
 
-    var material = new THREE.MeshLambertMaterial({
-	color: 0xffffff
-    });*/
     
     loop();
 
