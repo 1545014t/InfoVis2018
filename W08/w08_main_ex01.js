@@ -31,11 +31,11 @@ function main()
         [ 0, 1, 2 ], // f0
     ];
 
-   /* var scalars = [
+    var scalars = [
 	0.1,   // S0
 	0.2,   // S1
 	0.8,   // S2
-    ]; */
+    ]; 
 
   
     // Create a color map
@@ -81,7 +81,7 @@ function main()
     material.vertexColors = THREE.FaceColors;
     for ( var i = 0; i < nfaces; i++ )
     {
-	var id = faces[i];
+	/*var id = faces[i];
         var S0 = scalars[ id[0] ];
         var S1 = scalars[ id[1] ];
         var S2 = scalars[ id[2] ];
@@ -90,7 +90,7 @@ function main()
         var C2 = new THREE.Color().setHex( cmap[ S2 ][1] );
         geometry.faces[i].vertexColors.push( C0 );
         geometry.faces[i].vertexColors.push( C1 );
-        geometry.faces[i].vertexColors.push( C2 );   
+        geometry.faces[i].vertexColors.push( C2 );  */ 
        geometry.faces[i].color = new THREE.Color( 1, 1, 1 );
     }
 
