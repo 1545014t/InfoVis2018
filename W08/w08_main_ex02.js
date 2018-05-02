@@ -32,9 +32,9 @@ function main()
     ];
 
     var scalars = [
-        0.1,   // S0
-        0.2, // S1
-        0.8,  // S2
+        0,   // S0
+        128, // S1
+        255,  // S2
     ];
 
     // Create color map
@@ -85,9 +85,6 @@ function main()
         var S0 = scalars[ id[0] ];
         var S1 = scalars[ id[1] ];
         var S2 = scalars[ id[2] ];
-	S0 =  Math.floor(((S0-0.1)/0.7) * 255);
-	S1 =  Math.floor(((S1-0.1)/0.7) * 255);
-	S2 =  Math.floor(((S2-0.1)/0.7) * 255);
         var C0 = new THREE.Color().setHex( cmap[ S0 ][1] );
         var C1 = new THREE.Color().setHex( cmap[ S1 ][1] );
         var C2 = new THREE.Color().setHex( cmap[ S2 ][1] );
