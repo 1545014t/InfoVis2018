@@ -42,10 +42,10 @@ function main()
     for ( var i = 0; i < 256; i++ )
     {
         var S = i / 255.0; // [0,1]
-     // var R = Math.max( Math.cos(  S  * Math.PI ), 0.0 );
-        var G =  S   // Math.max( Math.cos( S * Math.PI), 0.0 );
-        var B =  S   // Math.max( Math.cos( S * Math.PI), 0.0 );
-        var color = new THREE.Color( 255, G, B);
+        var R = 255
+        var G =  S   
+        var B =  S   
+        var color = new THREE.Color( R, G, B);
         cmap.push( [ S, '0x' + color.getHexString() ] );
     }
 
