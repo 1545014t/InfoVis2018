@@ -41,10 +41,10 @@ function main()
     var cmap = [];
     for ( var i = 0; i < 256; i++ )
     {
-        var S = i / 255.0; // [0,1]
-        var R = 255
-        var G =  S   
-        var B =  S   
+        var S = i / 255.0; 
+        var R = 1
+        var G = 1 - S   
+        var B = 1 - S  
         var color = new THREE.Color( R, G, B);
         cmap.push( [ S, '0x' + color.getHexString() ] );
     }
